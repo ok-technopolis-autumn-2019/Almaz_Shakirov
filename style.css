@@ -4,11 +4,13 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "Roboto", sans-serif;
+    font-weight: 100;
     color: grey;
 }
 
 .todos__header {
 	font-size: 90px;
+	color: #deddd7;
 }
 
 .todos {
@@ -71,6 +73,7 @@ body {
 .main__new-task-input {
 	width: 100%;
 	height: 62px;
+	font-size: 25px;
 	border: 0;
 }
 
@@ -81,7 +84,6 @@ body {
 
 .list {
 	list-style-type: none;
-	word-wrap: break-word;
 	padding: 0;
 	margin: 0;
 	min-height: 300px;
@@ -102,10 +104,11 @@ body {
 .list__item__view-name {
 	width: 490px;
 	font-size: 23px;
+	word-wrap: break-word;
 }
 
 .list__item:hover .list__item__delete,
-.list__item__delete {
+.list__item__delete:focus {
 	opacity: 1;
 }
 
@@ -137,6 +140,7 @@ body {
 
 .task-filter__input {
 	opacity: 0;
+	width: 0;
 }
 
 .task-filter__input:checked + .task-filter__name {
@@ -148,4 +152,10 @@ body {
 
 .task-filter__name:hover {
 	background-color: white;
+}
+
+.task-completed {
+	border: 0;
+	background-color: white;
+	color: grey;
 }
