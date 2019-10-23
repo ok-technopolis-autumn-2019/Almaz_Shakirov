@@ -4,10 +4,11 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "Roboto", sans-serif;
+    color: grey;
 }
 
 .todos__header {
-	font-size: 90px	;
+	font-size: 90px;
 }
 
 .todos {
@@ -19,18 +20,43 @@ body {
     align-items: center;
 }
 
+.todos::before {
+	content: "";
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    left: 1px;
+    right: 1px;
+    height: 4px;
+    z-index: -1;
+}
+
+.todos::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    left: 3px;
+    right: 3px;
+    height: 8px;
+    z-index: -2;
+}
+
 .main {
 	display: flex;
+	height: 65px;
 	width: 100%;
 	flex-direction: row;
-	box-shadow: inset 0px -1px 0px #deddd7;
+	border-bottom: 1px #deddd7 solid;
 }
 
 .main__select-all-button {
 	background: url(images/arrow.svg) no-repeat;
 	border: none;
-	width: 32px;
-	height: 50px;
+	width: 55px;
+	height: 64px;
 	background-position: center;
 }
 
@@ -44,7 +70,7 @@ body {
 
 .main__new-task-input {
 	width: 100%;
-	min-height: 44px;
+	height: 62px;
 	border: 0;
 }
 
@@ -58,25 +84,32 @@ body {
 	word-wrap: break-word;
 	padding: 0;
 	margin: 0;
+	min-height: 300px;
 }
 
 .list__item {
 	display: flex;
 	align-items: center;
-	min-height: 45px;
-	box-shadow: inset 0px -1px 0px #deddd7;
+	min-height: 55px;
+	border-bottom: 1px #deddd7 solid;
 }
 
-.list__item:hover {
-	background-color: white;
+.list__item__view {
+	display: flex;
+	align-items: center;
+}
+
+.list__item__view-name {
+	width: 490px;
+	font-size: 23px;
+}
+
+.list__item:hover .list__item__delete,
+.list__item__delete {
+	opacity: 1;
 }
 
 .list__item__view-status-icon {
-}
-
-.todos__action-bar {
-	display: flex;
-	flex-direction: row;
 }
 
 .list__item__delete {
@@ -84,7 +117,22 @@ body {
 	background: url(images/rectangle.svg) no-repeat;
 	width: 20px;
 	height: 20px;
-	padding-top: 10px;
+	margin: 10px;
+	opacity: 0;
+}
+
+.action-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 39px;
+	width: 100%;
+	font-size: 13px;
+	border-top: 1px #deddd7 solid;
+}
+
+.action-bar__item {
+	padding: 0px 10px 0px 10px;
 }
 
 .task-filter__input {
