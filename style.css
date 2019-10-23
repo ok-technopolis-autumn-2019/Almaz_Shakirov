@@ -1,52 +1,84 @@
 body {
-	background-color: #f5f5f5;
+	display: flex;
+	flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.todos__header {
+	font-size: 90px	;
 }
 
 .todos {
+	position: relative;
 	display: flex;
     flex-direction: column;
-    align-items: center; 
-    padding-top: 200px;
+    width: 550px;
+    box-shadow: 0px 0px 4px #deddd7;
+    align-items: center;
 }
 
-.title {
-	font-weight: 500;
+.main {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	box-shadow: inset 0px -1px 0px #deddd7;
 }
 
-.main__selectAll {
-	display: inline-block;
-}
-
-.main__newTask {
-	display: inline-block;
-}
-
-.main__selectAll__button {
-	background: url(images/arrow.png) no-repeat;
+.main__select-all-button {
+	background: url(images/arrow.svg) no-repeat;
 	border: none;
 	width: 32px;
-	height: 18px;
+	height: 50px;
+	background-position: center;
 }
 
-.main__selectAll__button:hover {
+.main__select-all-button:hover {
 	background-color: white;
+}
+
+.main__new-task {
+	width: 100%;
+}
+
+.main__new-task-input {
+	width: 100%;
+	min-height: 44px;
+	border: 0;
+}
+
+
+.todos__tasks {
+	width: 100%;
+}
+
+.list {
+	list-style-type: none;
+	word-wrap: break-word;
+	padding: 0;
+	margin: 0;
+}
+
+.list__item {
+	display: flex;
+	align-items: center;
+	min-height: 45px;
+	box-shadow: inset 0px -1px 0px #deddd7;
 }
 
 .list__item:hover {
 	background-color: white;
 }
 
-.todos__tasks__list {
-	list-style-type: none;
-}
-
-.actionBar__item {
-	display: inline-block;
+.todos__action-bar {
+	display: flex;
+	flex-direction: row;
 }
 
 .list__item__delete {
 	border: none;
-	background: url(images/rectangle.png) no-repeat;
+	background: url(images/rectangle.svg) no-repeat;
 	width: 20px;
 	height: 20px;
 	padding-top: 10px;
