@@ -17,6 +17,11 @@
 	width: 0;
 }
 
+.task-filter__name {
+    padding: 3px;
+    border: 1px transparent solid;
+}
+
 .task-filter__input:checked + .task-filter__name {
 	border: 1px solid grey;
 	color: grey;
@@ -30,6 +35,7 @@
 
 .task-completed {
 	border: 0;
-	background-color: white;
 	color: grey;
+	background-color: white;
+	font-size: 13px;
 }

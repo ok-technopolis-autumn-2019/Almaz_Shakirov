@@ -27,4 +27,5 @@
 	font-size: 23px;
 	font-style: italic;
 	border: 0;
+	box-sizing: border-box;
 }
