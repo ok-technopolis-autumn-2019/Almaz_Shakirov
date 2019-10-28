@@ -1,0 +1,52 @@
+.item {
+	display: flex;
+	align-items: center;
+	min-height: 55px;
+	border-bottom: 1px #deddd7 solid;
+}
+
+.item__view {
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+}
+
+.item__view-status {
+	position: absolute;
+	left: -9999px;
+}
+
+.item__view-status-icon {
+	width: 35px;
+	height: 35px;
+	box-sizing: border-box;
+	border: 1px solid #deddd7;
+	border-radius: 50%;
+}
+
+.item__view-name {
+	width: 450px;
+	font-size: 23px;
+	padding-left: 12px;
+	word-wrap: break-word;
+}
+
+.item__view-status:checked ~ .item__view-name {
+	color: #cccc;
+	text-decoration: line-through;
+}
+
+.item__view-status:checked ~ .item__view-status-icon {
+	background: url(../images/check-mark.svg) no-repeat;
+	background-position: center;
+}
+
+.item__delete {
+	border: none;
+	background: url(../images/rectangle.svg) no-repeat;
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	margin: 10px;
+	opacity: 0;
+}
