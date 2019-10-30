@@ -1,0 +1,28 @@
+{
+  "name": "Almaz_Shakirov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "list.css": "0.0.3",
+    "main.css": "^2.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "^11.1.1",
+    "stylelint-config-standard": "^19.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ok-technopolis-autumn-2019/Almaz_Shakirov.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ok-technopolis-autumn-2019/Almaz_Shakirov/issues"
+  },
+  "homepage": "https://github.com/ok-technopolis-autumn-2019/Almaz_Shakirov#readme"
+}
