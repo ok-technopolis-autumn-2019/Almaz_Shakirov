@@ -1,8 +1,10 @@
+@import "vars";
+
 .item {
 	display: flex;
 	align-items: center;
 	min-height: 55px;
-	border-bottom: 1px #deddd7 solid;
+	border-bottom: $border
 }
 
 .item__view {
@@ -13,14 +15,14 @@
 
 .item__view-status {
 	position: absolute;
-	left: -9999px;
+	left: $invisible_range;
 }
 
 .item__view-status-icon {
 	width: 35px;
 	height: 35px;
 	box-sizing: border-box;
-	border: 1px solid #deddd7;
+	border: $border;
 	border-radius: 50%;
 }
 
@@ -32,7 +34,7 @@
 }
 
 .item__view-status:checked ~ .item__view-name {
-	color: #cccc;
+	color: $color_checkbox_checked;
 	text-decoration: line-through;
 }
 
@@ -48,5 +50,5 @@
 	width: 30px;
 	height: 30px;
 	margin: 10px;
-	opacity: 0;
+	opacity: $invisible;
 }

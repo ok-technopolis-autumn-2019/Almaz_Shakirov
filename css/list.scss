@@ -10,5 +10,5 @@
 
 .list__item:hover .item__delete,
 .item__delete:focus {
-	opacity: 1;
+	opacity: $visible;
 }

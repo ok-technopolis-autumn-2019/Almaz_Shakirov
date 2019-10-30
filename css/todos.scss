@@ -1,18 +1,20 @@
+@import "vars";
+
 html, body {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-	font-family: "Roboto", sans-serif;
+	font-family: $font_family_text;
 	font-weight: 100;
 	color: grey;
 	margin: 0;
 	padding: 0;
-	background-color: #f2f2f2;
+	background-color: $color_background;
 }
 
 .todos__header {
 	font-size: 90px;
-	color: #deddd7;
+	color: #color_grey;
 }
 
 .todos {
@@ -20,7 +22,7 @@ html, body {
 	display: flex;
 	flex-direction: column;
 	width: 550px;
-	box-shadow: 0px 0px 4px #deddd7;
+	box-shadow: 0px 0px 2px #color_grey;
 	align-items: center;
 	background-color: white;
 }
@@ -30,7 +32,7 @@ html, body {
 	position: absolute;
 	top: 100%;
 	background-color: white;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: $box_shadow_before-after;
 	left: 2px;
 	right: 2px;
 	height: 5px;
@@ -42,7 +44,7 @@ html, body {
 	position: absolute;
 	top: 100%;
 	background-color: white;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: $box_shadow_before-after;
 	left: 4px;
 	right: 4px;
 	height: 10px;
