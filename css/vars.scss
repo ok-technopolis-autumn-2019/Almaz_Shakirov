@@ -8,9 +8,12 @@ $font_family_text: "Roboto", sans-serif;
 $font_size_action-bar: 13px;
 
 /* for checkbox */
-$invisible: 0;
-$visible: 1;
-$invisible_range: -9999px;
+$checkbox_invisible: 0;
+$checkbox_visible: 1;
+$checkbox_invisible_range: -9999px;
+
+/* for button */
+$button_invisible: 0;
 
 /* shadow */
 $box_shadow_before-after: 0 2px 4px rgba(0, 0, 0, 0.2);

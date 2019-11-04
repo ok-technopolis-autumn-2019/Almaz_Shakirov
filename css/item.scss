@@ -15,7 +15,7 @@
 
 .item__view-status {
 	position: absolute;
-	left: $invisible_range;
+	left: $checkbox_invisible_range;
 }
 
 .item__view-status-icon {
@@ -50,5 +50,5 @@
 	width: 30px;
 	height: 30px;
 	margin: 10px;
-	opacity: $invisible;
+	opacity: $button_invisible;
 }
