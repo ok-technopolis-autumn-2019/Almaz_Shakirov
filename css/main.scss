@@ -1,8 +1,10 @@
+@import "vars";
+
 .main {
 	display: flex;
 	height: 65px;
 	width: 100%;
-	border-bottom: 1px #deddd7 solid;
+	border-bottom: $border;
 }
 
 .main__select-all-button {
@@ -14,7 +16,7 @@
 }
 
 .main__select-all-button:hover {
-	background-color: #deddd7;
+	background-color: #color_grey;
 }
 
 .main__new-task {
